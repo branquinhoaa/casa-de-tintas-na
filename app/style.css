@@ -1,6 +1,4 @@
-.hide{
-    display: none;
-}
+/* first nav bar with search bar and register link */
 
 #caput{
     display: flex;
@@ -50,6 +48,9 @@ ul#register {
 }
 
 
+/* content within the carousel -  including the second navbar with links */
+
+
 #secondNavBar{
     background-color: rgba(128,128,128,0.5);
     margin-top: 0;
@@ -71,6 +72,14 @@ ul#register {
     text-align: center;
     font-size: 12px;
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+.uniqueLook{
+    color:#01BBAC;
+}
+.figures{
+    display: none;
 }
 
 #secondNavBar a{
@@ -115,6 +124,7 @@ ul>li>button, #stealMonth>button{
     font-size: 13px;
     font-weight: bolder;
     text-align: center;
+    text-transform: uppercase;
 }
 
 
@@ -144,6 +154,10 @@ ol.carousel-indicators .active {
     background-color: #01BBAC;
 }
 
+
+/* second div - div after the header and carousel header */
+
+
 #stealMonth{
     text-align: center;
     background-color: white;
@@ -166,7 +180,7 @@ ol.carousel-indicators .active {
     font-weight: 100;
 }
 
-#sublinhado{
+#underlined{
     border-bottom: 4px solid lightgrey;
     margin-bottom: 50px;
     padding-top: 20px;
@@ -178,8 +192,10 @@ div#figures{
     padding-top: 3px;
 }
 
+/* div latest works */
 
-                                                        /*==========  Non-Mobile First Method  ==========*/
+
+        /*==========  Non-Mobile First Method  ==========*/
 
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
@@ -199,6 +215,10 @@ div#figures{
             padding: 0;
             padding-top: 5px;
             margin: 0;
+        }
+        
+        .figures{
+        display: none;
         }
     }
 
@@ -240,6 +260,16 @@ div#figures{
             margin-left: 10px;
             width: 150px;
         }
+        
+        #login, #register{
+            display: none;
+        }
+        
+        .figures{
+            display: flex;
+            float: right;
+        }
+        
 
     }
 
