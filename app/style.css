@@ -1,0 +1,401 @@
+/* first nav bar with search bar and register link */
+
+#caput{
+    display: flex;
+    font-family: sans-serif;
+    color: darkgrey;
+    margin-bottom: 0;
+}
+
+input#search{
+    background-image: url(images/lupa.png) ;
+    background-size: 13px 13px;
+    padding-right: 5px;
+    background-position: 97% 50%;
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    background-color: transparent;
+    border: solid thin grey;
+}
+
+input#search:focus{
+    background-image: none;
+}
+
+
+.image{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    
+}
+
+.nav-pills>li{
+    display: inline-flex;
+    padding-left: 20px;
+}
+
+.nav-pills>li a{
+    color: darkgrey;
+}
+
+ul#register {
+    position: absolute;
+    right: 10%;
+}
+
+
+/* content within the carousel -  including the second navbar with links */
+
+#heading{
+    background-image: url(images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#secondNavBar{
+    background-color: rgba(128,128,128,0.5);
+    margin-top: 0;
+    padding: 0 40px;
+}
+
+
+ a.navbar-brand{
+    font-family: cursive;
+    text-align: center;
+    color: white;
+     font-weight: bold;
+     font-size: 1.5em;
+}
+
+#colorful a{
+    border-top: 10px solid ;
+    width: 110px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.uniqueLook{
+    color:#01BBAC;
+}
+.figures{
+    display: none;
+}
+
+#secondNavBar a{
+    color: white;
+    }
+
+
+#carousel li.item{
+    text-align: center;
+    padding-top: 8%;
+    height: 100%;
+}
+
+#carousel-example-generic{
+    height: 100%;
+}
+
+h1{
+    font-size: 45px;
+    font-family: sans-serif;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.buttons button, #stealMonth>button{
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    height: 39px;
+    width: 139px;
+    background-color: transparent;
+    border: solid thin #01BBAC;
+    color: #01BBAC;
+    font-size: 13px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+ul>li>button:hover, #stealMonth>button:hover{
+    background-color: #01BBAC;
+    color: white;
+}
+
+
+ol.carousel-indicators{
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 0;
+}
+
+ol.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 0; 
+    background-color: white;
+}
+
+ol.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    border-color: #01BBAC;
+    background-color: #01BBAC;
+}
+
+
+/* second div - div after the header and carousel header */
+
+
+#stealMonth{
+    text-align: center;
+    background-color: white;
+    height: 100%;    
+}
+
+#stealMonth h2{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: dimgrey;
+    font-size: 36px;
+    padding: 20px;
+    font-weight: lighter;
+}
+
+#stealMonth h4{
+    text-align: center;
+    color: dimgrey;
+    line-height: 20px;
+    font-weight: 100;
+}
+
+#underlined{
+    border-bottom: 4px solid lightgrey;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+div#figures{
+    position: absolute;
+    right: 20px;
+    padding-top: 3px;
+}
+
+            /* div latest works */
+
+#latest-work{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/background_latestWorks.jpg);
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+}
+
+#latest-work h2{
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#latest-work h5{
+    text-align: center;
+    margin: 50px 8%;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: white;
+    font-size: 18px;
+    
+}
+
+#latest-work .carousel-inner{
+    padding-left: 0;
+    padding-bottom: 50px;
+}
+
+.worker{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.Workposition{
+    color: aqua;
+    font-weight: bold;
+}
+
+
+#hide{
+    display: none;
+}
+
+a.right.carousel-control, a.left.carousel-control{
+    background-image: none;
+}
+
+#arrows{
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    margin: 1%;
+    padding: 20px;
+    color: white;
+}
+
+.workersCarousel{
+    height: 100%;
+}
+
+figcaption{
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    padding-left: 20px;
+    padding-top: 0px;
+    
+}
+
+        /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+        
+        #secondNavBar{ 
+            padding: 0;
+            padding-left: 15px;
+            margin: 0;
+            width: 100%;
+        }
+
+        #colorful a{
+        border-top: 10px solid ;
+        width:87px;
+        text-align: center;
+        font-size: 12px;
+            padding: 0;
+            padding-top: 5px;
+            margin: 0;
+        }
+        
+        .figures{
+        display: none;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        
+        a.navbar-brand{
+            width: 150px;
+            margin: 0;
+            padding: 0;
+              padding-top: 5px;
+              padding-left: 5px;
+              text-align: center;
+              font-size: 1.2em;
+        }
+        #colorful a{
+            width: 80px;
+            text-align: center;
+            font-size: 11px;
+            padding: 0;
+            padding-top: 5px;
+            margin: 0;
+        }
+        
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 765px) {
+        
+        a.navbar-brand{
+            width: 200px;
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: center
+        }
+
+        input#search{
+            padding-left: 10px;
+            margin-left: 10px;
+            width: 150px;
+        }
+        
+        #login, #register{
+            display: none;
+        }
+        
+        .figures{
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        #logRegistFig{
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+        
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        #carousel li.item{
+            padding: 0;
+            margin: 0;
+            font-size: 30px;
+            text-align: center;
+            line-height: 0;
+        }
+        h1{
+            font-size: 38px;
+        }
+        
+        
+        
+        
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        h1{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        ul.carousel-inner{
+            margin: 0;
+            padding: 0 20px;
+        }
+        
+                
+        ul>li>button, #stealMonth>button{
+            margin:40px 10px;
+            height: 30px;
+            width: 110px;
+            background-color: transparent;
+            border: solid thin #01BBAC;
+            color: #01BBAC;
+            font-size: 10px;
+            font-weight: bolder;
+            text-align: center;
+        }
+    }
+
